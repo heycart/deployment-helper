@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace HeyCart\Deployment\Tests;
 
-use PHPUnit\Framework\Attributes\CoversClass;
-use PHPUnit\Framework\TestCase;
 use HeyCart\Deployment\Application;
 use HeyCart\Deployment\Command\RunCommand;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\TestCase;
 use Zalas\PHPUnit\Globals\Attribute\Env;
 
 #[CoversClass(Application::class)]

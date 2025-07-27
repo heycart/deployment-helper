@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace HeyCart\Deployment\Tests\Command;
 
-use PHPUnit\Framework\Attributes\CoversClass;
-use PHPUnit\Framework\TestCase;
 use HeyCart\Deployment\Command\FastlySnippetListCommand;
 use HeyCart\Deployment\Integration\Fastly\FastlyAPIClient;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Tester\CommandTester;
 use Zalas\PHPUnit\Globals\Attribute\Env;

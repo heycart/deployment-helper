@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace HeyCart\Deployment\Tests\Command;
 
-use PHPUnit\Framework\Attributes\CoversClass;
-use PHPUnit\Framework\TestCase;
 use HeyCart\Deployment\Command\RunCommand;
+use HeyCart\Deployment\Services\HeyCartState;
 use HeyCart\Deployment\Services\HookExecutor;
 use HeyCart\Deployment\Services\InstallationManager;
-use HeyCart\Deployment\Services\HeyCartState;
 use HeyCart\Deployment\Services\UpgradeManager;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Tester\CommandTester;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 use Zalas\PHPUnit\Globals\Attribute\Env;

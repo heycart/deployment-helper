@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace HeyCart\Deployment\Tests\Services;
 
 use Doctrine\DBAL\Connection;
-use PHPUnit\Framework\Attributes\CoversClass;
-use PHPUnit\Framework\TestCase;
 use HeyCart\Deployment\Config\ProjectConfiguration;
 use HeyCart\Deployment\Helper\ProcessHelper;
 use HeyCart\Deployment\Services\OneTimeTasks;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Output\OutputInterface;
 
 #[CoversClass(OneTimeTasks::class)]

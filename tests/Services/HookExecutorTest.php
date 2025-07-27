@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace HeyCart\Deployment\Tests\Services;
 
-use PHPUnit\Framework\Attributes\CoversClass;
-use PHPUnit\Framework\Attributes\DataProvider;
-use PHPUnit\Framework\TestCase;
 use HeyCart\Deployment\Config\ProjectConfiguration;
 use HeyCart\Deployment\Config\ProjectHooks;
 use HeyCart\Deployment\Helper\ProcessHelper;
 use HeyCart\Deployment\Services\HookExecutor;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\TestCase;
 
 #[CoversClass(HookExecutor::class)]
 class HookExecutorTest extends TestCase

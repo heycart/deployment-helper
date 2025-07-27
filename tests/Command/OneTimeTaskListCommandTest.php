@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace HeyCart\Deployment\Tests\Command;
 
-use PHPUnit\Framework\Attributes\CoversClass;
-use PHPUnit\Framework\TestCase;
 use HeyCart\Deployment\Command\OneTimeTaskListCommand;
 use HeyCart\Deployment\Services\OneTimeTasks;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Tester\CommandTester;
 
 #[CoversClass(OneTimeTaskListCommand::class)]

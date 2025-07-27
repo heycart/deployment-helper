@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace HeyCart\Deployment\Tests\Config;
 
+use HeyCart\Deployment\Config\ProjectExtensionManagement;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-use HeyCart\Deployment\Config\ProjectExtensionManagement;
 
 #[CoversClass(ProjectExtensionManagement::class)]
 class ProjectExtensionManagementTest extends TestCase

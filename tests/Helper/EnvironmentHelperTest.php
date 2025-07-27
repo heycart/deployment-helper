@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace HeyCart\Deployment\Tests\Helper;
 
+use HeyCart\Deployment\Helper\EnvironmentHelper;
 use PHPUnit\Framework\Attributes\BackupGlobals;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
-use HeyCart\Deployment\Helper\EnvironmentHelper;
 
 /**
  * @internal

@@ -6,10 +6,10 @@ namespace HeyCart\Deployment\Tests\Services;
 
 use Composer\InstalledVersions;
 use Doctrine\DBAL\Connection;
+use HeyCart\Deployment\Services\HeyCartState;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
-use HeyCart\Deployment\Services\HeyCartState;
 
 #[CoversClass(HeyCartState::class)]
 class HeyCartStateTest extends TestCase

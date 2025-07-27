@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace HeyCart\Deployment\Tests\Integration;
 
-use PHPUnit\Framework\Attributes\CoversClass;
-use PHPUnit\Framework\MockObject\MockObject;
-use PHPUnit\Framework\TestCase;
 use HeyCart\Deployment\Config\ProjectConfiguration;
 use HeyCart\Deployment\Event\PostDeploy;
 use HeyCart\Deployment\Helper\ProcessHelper;
 use HeyCart\Deployment\Integration\ClearAlwaysCacheSubscriber;
 use HeyCart\Deployment\Struct\RunConfiguration;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\MockObject\MockObject;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Output\NullOutput;
 
 #[CoversClass(ClearAlwaysCacheSubscriber::class)]

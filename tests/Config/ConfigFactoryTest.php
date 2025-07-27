@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace HeyCart\Deployment\Tests\Config;
 
-use PHPUnit\Framework\Attributes\CoversClass;
-use PHPUnit\Framework\Attributes\DataProvider;
-use PHPUnit\Framework\TestCase;
 use HeyCart\Deployment\Application;
 use HeyCart\Deployment\Config\ConfigFactory;
 use HeyCart\Deployment\Config\ProjectExtensionManagement;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\TestCase;
 use Zalas\PHPUnit\Globals\Attribute\Env;
 
 #[CoversClass(ConfigFactory::class)]

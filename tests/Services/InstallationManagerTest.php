@@ -5,17 +5,17 @@ declare(strict_types=1);
 namespace HeyCart\Deployment\Tests\Services;
 
 use Doctrine\DBAL\Connection;
-use PHPUnit\Framework\Attributes\CoversClass;
-use PHPUnit\Framework\TestCase;
 use HeyCart\Deployment\Config\ProjectConfiguration;
 use HeyCart\Deployment\Helper\ProcessHelper;
 use HeyCart\Deployment\Services\AccountService;
 use HeyCart\Deployment\Services\AppHelper;
+use HeyCart\Deployment\Services\HeyCartState;
 use HeyCart\Deployment\Services\HookExecutor;
 use HeyCart\Deployment\Services\InstallationManager;
 use HeyCart\Deployment\Services\PluginHelper;
-use HeyCart\Deployment\Services\HeyCartState;
 use HeyCart\Deployment\Struct\RunConfiguration;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Output\OutputInterface;
 use Zalas\PHPUnit\Globals\Attribute\Env;
 

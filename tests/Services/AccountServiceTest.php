@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace HeyCart\Deployment\Tests\Services;
 
-use PHPUnit\Framework\Attributes\CoversClass;
-use PHPUnit\Framework\TestCase;
 use HeyCart\Deployment\Helper\ProcessHelper;
 use HeyCart\Deployment\Services\AccountService;
 use HeyCart\Deployment\Tests\TestUtil\StaticSystemConfigHelper;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\HttpClient\Exception\ClientException;
 use Symfony\Component\HttpClient\MockHttpClient;

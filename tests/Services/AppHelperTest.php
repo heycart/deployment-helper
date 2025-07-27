@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace HeyCart\Deployment\Tests\Services;
 
 use Doctrine\DBAL\Connection;
-use PHPUnit\Framework\Attributes\CoversClass;
-use PHPUnit\Framework\MockObject\MockObject;
-use PHPUnit\Framework\TestCase;
 use HeyCart\Deployment\Config\ProjectConfiguration;
 use HeyCart\Deployment\Config\ProjectExtensionManagement;
 use HeyCart\Deployment\Helper\ProcessHelper;
 use HeyCart\Deployment\Services\AppHelper;
 use HeyCart\Deployment\Services\AppLoader;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\MockObject\MockObject;
+use PHPUnit\Framework\TestCase;
 
 #[CoversClass(AppHelper::class)]
 class AppHelperTest extends TestCase

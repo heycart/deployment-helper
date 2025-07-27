@@ -6,9 +6,9 @@ namespace HeyCart\Deployment\Command;
 
 use HeyCart\Deployment\Event\PostDeploy;
 use HeyCart\Deployment\Helper\EnvironmentHelper;
+use HeyCart\Deployment\Services\HeyCartState;
 use HeyCart\Deployment\Services\HookExecutor;
 use HeyCart\Deployment\Services\InstallationManager;
-use HeyCart\Deployment\Services\HeyCartState;
 use HeyCart\Deployment\Services\UpgradeManager;
 use HeyCart\Deployment\Struct\RunConfiguration;
 use Symfony\Component\Console\Attribute\AsCommand;
