@@ -1,0 +1,3 @@
+deployment:
+  store:
+    license-domain: "example.com"

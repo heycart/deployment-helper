@@ -1,0 +1,33 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+use HeyCart\Deployment\Application;
+use HeyCart\Deployment\ApplicationOutput;
+use Symfony\Component\Console\Output\ConsoleOutput;
+
+error_reporting(-1);
+ini_set('display_errors', 1);
+
+$includables = [
+    __DIR__ . '/../../../autoload.php',
+    __DIR__ . '/../../vendor/autoload.php',
+    __DIR__ . '/../vendor/autoload.php',
+    __DIR__ . '/vendor/autoload.php',
+];
+
+if (str_contains(__DIR__, 'custom/plugins')) {
+    $includables[] = __DIR__ . '/../../../../vendor/autoload.php';
+}
+
+foreach ($includables as $file) {
+    if (file_exists($file)) {
+        include_once $file;
+
+        break;
+    }
+}
+
+$app = new Application();
+$app->run(output: new ApplicationOutput(new ConsoleOutput()));
