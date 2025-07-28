@@ -35,10 +35,10 @@ class InstallationManager
 
         $this->hookExecutor->execute(HookExecutor::HOOK_PRE_INSTALL);
 
-        $shopLocale = EnvironmentHelper::getVariable('INSTALL_LOCALE', 'en-GB');
-        $shopCurrency = EnvironmentHelper::getVariable('INSTALL_CURRENCY', 'EUR');
+        $shopLocale = EnvironmentHelper::getVariable('INSTALL_LOCALE', 'zh-CN');
+        $shopCurrency = EnvironmentHelper::getVariable('INSTALL_CURRENCY', 'CNY');
         $adminUser = EnvironmentHelper::getVariable('INSTALL_ADMIN_USERNAME', 'admin');
-        $adminPassword = EnvironmentHelper::getVariable('INSTALL_ADMIN_PASSWORD', 'heycart');
+        $adminPassword = EnvironmentHelper::getVariable('INSTALL_ADMIN_PASSWORD', 'heycart123');
         $appUrl = EnvironmentHelper::getVariable('APP_URL');
         $salesChannelUrl = UrlHelper::normalizeSalesChannelUrl(EnvironmentHelper::getVariable('SALES_CHANNEL_URL', $appUrl) ?? '');
 

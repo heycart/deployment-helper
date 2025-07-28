@@ -102,7 +102,7 @@ class InstallationManagerTest extends TestCase
         $manager->run(new RunConfiguration(true, true), $this->createMock(OutputInterface::class));
 
         static::assertCount(7, $consoleCommands);
-        static::assertSame(['system:install', '--create-database', '--shop-locale=en-GB', '--shop-currency=EUR', '--force', '--no-assign-theme', '--skip-assets-install'], $consoleCommands[0]);
+        static::assertSame(['system:install', '--create-database', '--shop-locale=zh-CN', '--shop-currency=CNY', '--force', '--no-assign-theme', '--skip-assets-install'], $consoleCommands[0]);
     }
 
     public function testRunWithLicenseDomain(): void
@@ -160,6 +160,6 @@ class InstallationManagerTest extends TestCase
         $manager->run(new RunConfiguration(true, true, forceReinstallation: true), $this->createMock(OutputInterface::class));
 
         static::assertCount(4, $consoleCommands);
-        static::assertSame(['system:install', '--create-database', '--shop-locale=en-GB', '--shop-currency=EUR', '--force', '--no-assign-theme', '--skip-assets-install', '--drop-database'], $consoleCommands[0]);
+        static::assertSame(['system:install', '--create-database', '--shop-locale=zh-CN', '--shop-currency=CNY', '--force', '--no-assign-theme', '--skip-assets-install', '--drop-database'], $consoleCommands[0]);
     }
 }
